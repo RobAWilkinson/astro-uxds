@@ -91,6 +91,19 @@
               "status": "new"
             }
           ]
+        },
+        {
+          "name": "Forms and Validation",
+          "numeral": 3,
+          "link": "/patterns/forms-and-validation/",
+          "rules": [
+            {
+              "numeral": 1,
+              "rule": "Forms shall conform to the horizonal and vertical spacing values defined in figure 3.1.1",
+              "figure": "/img/patterns/forms-spacing.png",
+              "status": "new"
+            }
+          ]
         }
       ]
     },
