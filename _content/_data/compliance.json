@@ -99,8 +99,18 @@
           "rules": [
             {
               "numeral": 1,
-              "rule": "Forms shall conform to the horizonal and vertical spacing values defined in figure 3.3.1",
+              "rule": "Forms shall be designed in columns.",
+              "status": "new"
+            },
+            {
+              "numeral": 2,
+              "rule": "Forms shall conform to the horizonal and vertical spacing values defined in figure 3.3.2",
               "figure": "/img/patterns/forms-spacing.png",
+              "status": "new"
+            },
+            {
+              "numeral": 3,
+              "rule": "Form labels shall be placed above their respective fields.",
               "status": "new"
             }
           ]
