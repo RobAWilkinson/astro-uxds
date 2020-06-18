@@ -21,7 +21,7 @@ One-column layout is preferred, but use two-column layouts when:
 
 ## Form Spacing
 
-![Values for horizonal and vertical spacing.](/img/patterns/forms-spacing.png)
+#3.3.1[Values for horizonal and vertical spacing.](/img/patterns/forms-spacing.png)
 
 ## Labels
 

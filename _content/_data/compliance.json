@@ -99,7 +99,7 @@
           "rules": [
             {
               "numeral": 1,
-              "rule": "Forms shall conform to the horizonal and vertical spacing values defined in figure 3.1.1",
+              "rule": "Forms shall conform to the horizonal and vertical spacing values defined in figure 3.3.1",
               "figure": "/img/patterns/forms-spacing.png",
               "status": "new"
             }
