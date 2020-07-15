@@ -81,3 +81,18 @@ p code {
   padding: 0 0.25rem;
   line-height: 0;
 }
+/* reset astro.min.css presets that interfere with astrouxs.com styles */
+html, body, h1, h2, h3, h4, h5, p, li {
+  color: inherit;
+  -webkit-font-smoothing: inherit;
+
+  
+  --scrollBarThumbBackgroundColor: var(--colorQuaternaryDarken1, #9ba0aa);
+  --scrollBarThumbBackgroundHoverColor: var(--colorQuaternaryDarken2, #676a71);
+  --scrollBarTrackBackgroundColor: transparent;
+  --scrollBarTrackCornerBackgroundColor: var(
+    --colorQuaternaryLighten4,
+    #f2f4f7
+  );
+
+}

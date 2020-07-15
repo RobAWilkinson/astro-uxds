@@ -4,7 +4,9 @@ module.exports = function(eleventyConfig) {
   const markdownItAnchor = require("markdown-it-anchor");
   const implicitFigures = require("markdown-it-implicit-figures");
   const markdownItFigure = require('./js/markdown-figure-it.js');
+  const addWebComponentDefinitions = require('eleventy-plugin-add-web-component-definitions');
   const cleanCSS = require("clean-css");
+
   const fs = require("fs");
 
   // console.log(markdownIt.escapeHtml);
@@ -73,6 +75,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy({ "node_modules/@astrouxds/rux-static/icons": "icons" });
+
 
   //
   eleventyConfig.setBrowserSyncConfig({
@@ -88,6 +92,11 @@ module.exports = function(eleventyConfig) {
       }
     }
   });
+
+  eleventyConfig.addPlugin(addWebComponentDefinitions, {
+    // verbose: true,
+    path: customElement => `/astrouxds/${customElement}/${customElement}.js`
+  })
 
   function savePasswordHeaders() {
     var passwordHeaderFileContent = `

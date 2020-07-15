@@ -9,7 +9,7 @@
 	<h1>{{ title }}</h1>
 	{% if demo %}
 
-		<div class="demo-container">
+		<div class="demo-container" id="demo">
 
 			<div class="demo-container__theme-toggle">
 				{% if theme %}
@@ -23,7 +23,47 @@
 				{% endif %}
 			</div>
 
-			<iframe id="live-sample" class="live-sample" scrolling="no" src="{{ demo }}" style="width: 100%; height: {{height}}; overflow: hidden;"></iframe>
+			<div id="live-sample" class="live-sample">
+
+				<style type="text/css">
+
+          .live-sample {
+            display: flex;
+            justify-content: space-around;
+						padding: 2rem 0;
+
+          }
+          @font-face {
+            font-family: "Open Sans";
+            src: url("/astrouxds/fonts/opensans-bold-webfont.woff2") format("woff2"),
+              url("/astrouxds/fonts/opensans-bold-webfont.woff") format("woff");
+            font-weight: 700;
+            font-style: normal;
+          }
+          @font-face {
+            font-family: "Open Sans";
+            src: url("/astrouxds/fonts/opensans-light-webfont.woff2") format("woff2"),
+              url("/astrouxds/fonts/opensans-light-webfont.woff") format("woff");
+            font-weight: 300;
+            font-style: normal;
+          }
+          @font-face {
+            font-family: "Open Sans";
+            src: url("/astrouxds/fonts/opensans-regular-webfont.woff2") format("woff2"),
+              url("/astrouxds/fonts/opensans-regular-webfont.woff") format("woff");
+            font-weight: 400;
+            font-style: normal;
+          }
+          @font-face {
+            font-family: "Roboto Mono";
+            src: url("/astrouxds/fonts/roboto-mono-regular.woff2") format("woff2"),
+              url("/astrouxds/fonts/roboto-mono-regular.woff") format("woff");
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+				{{ demo | safe }}
+			</div>
 
 			<div class="demo-container__sample-links">
 				{% if storybook %}

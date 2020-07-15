@@ -4,7 +4,7 @@ path: /components/button
 date: Last Modified
 layout: components.template.njk
 title: Button
-demo: https://rocketcom.bitbucket.io/html-demos/button.html
+demo: '<rux-button>Button</rux-button> <rux-button outline>Outline Button</rux-button><rux-button icon="caution">Caution Button</rux-button><rux-button icon="caution" icononly></rux-button>'
 storybook: components-buttons--standard-button
 git: rux-button
 height: 210px
